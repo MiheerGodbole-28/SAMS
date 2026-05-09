@@ -1,0 +1,111 @@
+:root {
+    --main:      #f0efec;
+    --main-text: #121f11;
+    --primary:   #1b2eb0;
+    --secondary: #ece9e8;
+    --accent:    #99c724;
+    --font-body: Garamond, serif;
+}
+
+body{
+    background-color: var(--main);
+    color: var(--main-text);
+    font-family: var(--font-body);
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.container{
+    width: 100%;
+    max-width: 800px;
+}
+
+header{
+    background-color: var(--primary);
+    color: var(--main);
+    padding: 20px;
+    border-radius: 8px 8px 0 0;
+    text-align: center;
+}
+
+header h1{
+    margin: 0 0 10px 0;
+}
+
+header p{
+    margin: 0;
+    color: var(--accent);
+}
+
+.table-container{
+    background-color: white;
+    padding: 20px;
+    border-radius: 0 0 8px 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td{
+    padding: 12px;
+    text-align: left;
+    border-bottom: 2px solid var(--secondary);
+
+}
+
+th{
+    background-color: var(--secondary);
+    color: var(--main-text);
+}
+
+.status-badge{
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 0.9em;
+    font-weight: bold;
+}
+
+.status-badge.pending  { background-color: var(--accent); color: var(--main-text); }
+.status-badge.present  { background-color: #5a9e6f; color: white; }
+.status-badge.absent   { background-color: #d9534f; color: white; }
+
+button{
+    cursor: pointer;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    font-family: var(--font-body);
+    font-weight: bold;
+    margin-right: 5px;
+    transition: background-color 0.2s;
+}
+
+.btn-present {
+    background-color: var(--primary);
+    color: white;
+}
+
+.btn-absent {
+    background-color: var(--accent);
+    color: var(--main-text);
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+.summary-bar {
+    display: flex;
+    gap: 20px;
+    padding: 10px 20px;
+    background-color: var(--accent);
+    border-radius: 4px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    justify-content: center;
+}

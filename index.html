@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Attendance Management</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        
+        <header>
+            <h1>Attendance Dashboard</h1>
+            <p>Manage today's class records</p>
+        </header>
+
+        <main>
+            <div class="table-container">
+                <div class="summary-bar">
+                    <span id="count-total">Total: 0</span>
+                    <span id="count-present">Present: 0</span>
+                    <span id="count-absent">Absent: 0</span>
+                </div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Name</th>
+                            <th>Status</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody id="student-list"></tbody>
+                </table>
+            </div>
+        </main>
+
+    </div>
+    
+    <script src="app.js"></script>
+</body>
+</html>
